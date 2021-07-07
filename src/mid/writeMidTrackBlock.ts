@@ -1,3 +1,4 @@
+const Buffer = require('buffer/').Buffer
 import MidContext from '../interfaces/MidContext'
 import { write32 } from './write'
 

@@ -1,3 +1,4 @@
+const Buffer = require('buffer/').Buffer
 import { Uint8Size, Uint16Size, Uint32Size } from '../interfaces/Constants'
 import MidContext from '../interfaces/MidContext'
 
