@@ -1,12 +1,15 @@
 {
   "name": "mus2midi",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Converts mus format (e.g. Doom WAD Music) to midi",
   "repository": {
     "url": "https://github.com/gareththegeek/mus2midi"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.d.ts"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc"
