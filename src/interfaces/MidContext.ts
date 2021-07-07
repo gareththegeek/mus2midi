@@ -1,6 +1,6 @@
-import { Writable } from 'stream'
+import { MemStream } from '../mid/stream'
 
 export default interface MidContext {
-    file: Writable
+    file: MemStream
     offset: number
 }

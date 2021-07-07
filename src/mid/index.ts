@@ -1,15 +1,15 @@
-import MemoryStream from 'memorystream'
 import Mus from '../interfaces/Mus'
 import { writeMidHead } from './writeMidHead'
 import { writeMidTrackBlock } from './writeMidTrackBlock'
 import { writeMidEvent } from './writeMidEvent'
 import { writeMidTempo } from './writeMidTempo'
+import { MemStream } from './stream'
 
 const DataOffset = 22
 const LengthOffset = DataOffset - 4
 
 export const writeMid = (mus: Mus): Buffer => {
-    const file = new MemoryStream()
+    const file = new MemStream()
     const context = {
         file,
         offset: 0
